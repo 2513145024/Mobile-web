@@ -9,6 +9,7 @@ body {
     line-height: 1.5;
     background-color: #f6f6f6;
 }
+
 a {
     color: #666;
     text-decoration: none;
@@ -28,11 +29,14 @@ div {
     /* css3 盒子模型 */
     box-sizing: border-box;
 }
+
 /* 头部 */
-.app{
+.app {
     height: 45px;
+    z-index: 9999;
 }
-.app ul li{
+
+.app ul li {
     float: left;
     height: 45px;
     line-height: 45px;
@@ -40,29 +44,36 @@ div {
     text-align: center;
     color: #fff;
 }
-.app ul li:nth-child(1){
+
+.app ul li:nth-child(1) {
     cursor: pointer;
     width: 8%;
 }
-.app ul li:nth-child(1) img{
+
+.app ul li:nth-child(1) img {
     width: 10px;
 }
-.app ul li:nth-child(2){
+
+.app ul li:nth-child(2) {
     width: 10%;
 }
-.app ul li:nth-child(2) img{
+
+.app ul li:nth-child(2) img {
     width: 30px;
 }
-.app ul li:nth-child(3){
+
+.app ul li:nth-child(3) {
     width: 57%;
 }
-.app ul li:nth-child(4){
+
+.app ul li:nth-child(4) {
     cursor: pointer;
     width: 25%;
-    background-color:#F63515;
+    background-color: #F63515;
 }
+
 /* 搜索 */
-.search-wrap{
+.search-wrap {
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -70,8 +81,10 @@ div {
     min-width: 320px;
     max-width: 640px;
     cursor: pointer;
+    z-index: 9999;
 }
-.search-btn{
+
+.search-btn {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,7 +92,8 @@ div {
     height: 44px;
     /* background-color: seagreen; */
 }
-.search-btn::before{
+
+.search-btn::before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -88,7 +102,8 @@ div {
     background-size: 20px 18px;
     margin: 14px 0 0 15px;
 }
-.search-login{
+
+.search-login {
     position: absolute;
     top: 0;
     right: 0;
@@ -99,7 +114,8 @@ div {
     color: #fff;
     /* background-color: sandybrown; */
 }
-.search{
+
+.search {
     position: relative;
     height: 30px;
     line-height: 30px;
@@ -107,7 +123,8 @@ div {
     border-radius: 15px;
     background-color: #fff;
 }
-.jd-icon{
+
+.jd-icon {
     position: absolute;
     top: 8px;
     left: 13px;
@@ -116,7 +133,8 @@ div {
     background: url(../images/jd.png)no-repeat;
     background-size: 20px 15px;
 }
-.jd-icon::after{
+
+.jd-icon::after {
     position: absolute;
     right: -8px;
     top: 0;
@@ -125,7 +143,8 @@ div {
     height: 15px;
     background-color: #ccc;
 }
-.sou{
+
+.sou {
     position: absolute;
     top: 8px;
     left: 50px;
@@ -134,39 +153,77 @@ div {
     background: url(../images/jd-sprites.png)no-repeat -81px 0;
     background-size: 200px;
 }
-.txt{
+
+.txt {
     margin-left: 75px;
     font-size: 12px;
 }
+
 /* 主体 */
-.slider img{
+.slider img {
     width: 100%;
 }
-.brand div{
+
+.brand div {
     float: left;
     width: 33.33%;
 }
-.brand div img{
+
+.brand div img {
     width: 100%;
 }
-nav a{
+
+nav a {
     float: left;
     width: 20%;
     margin-top: 10px;
     text-align: center;
 }
-nav a img{
+
+nav a img {
     width: 40px;
 }
+
 .news {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
-.news div{
+
+.news div {
     float: left;
     width: 50%;
 }
-.news div img{
+
+.news div img {
     width: 100%;
+}
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
